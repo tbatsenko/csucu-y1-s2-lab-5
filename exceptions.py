@@ -6,13 +6,13 @@ class CursorEndError(Exception):
     pass
 
 
-class CursorTopError(Exception):
+class CharacterDontExist(Exception):
     pass
 
 
-class CursorTopError(Exception):
+class NoFilename(Exception):
     pass
 
 
-class CursorTopError(Exception):
+class NotChar(Exception):
     pass

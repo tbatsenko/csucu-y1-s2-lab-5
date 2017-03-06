@@ -1,3 +1,6 @@
+import exceptions
+
+
 class Cursor:
     def __init__(self, document):
         """
@@ -12,12 +15,16 @@ class Cursor:
         moves cursor one character forward
         """
         self.position += 1
+        if self.position > len(self.document.characters):
+            raise CursorEndError
 
     def back(self):
         """
         moves cursor one character back
         """
         self.position -= 1
+        if self.position > len(self.document.characters):
+            raise CursorTopError
 
     def home(self):
         """
