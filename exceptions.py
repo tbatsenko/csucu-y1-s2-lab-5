@@ -4,3 +4,15 @@ class CursorTopError(Exception):
 
 class CursorEndError(Exception):
     pass
+
+
+class CursorTopError(Exception):
+    pass
+
+
+class CursorTopError(Exception):
+    pass
+
+
+class CursorTopError(Exception):
+    pass
